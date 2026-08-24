@@ -183,7 +183,6 @@
         }
     </style>
 </head>
-
 <body>
 
 <div class="card">
@@ -191,12 +190,10 @@
     <h1>🎉 Happy Birthday, Dad! 🎉</h1>
     <div class="sub-title">Our Anchor & Inspiration</div>
 
-        <div class="photo-container">
+    <div class="photo-container">
         <img src="Image/family-photo.jpg"
              alt="Happy Birthday Dad"
              onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'fallback-text\'>📸 Place Family Photo Here<br><small>Upload an image named family-photo.jpg</small></div>';">
-    </div>
-
     </div>
 
     <div class="message-section">
@@ -218,22 +215,16 @@
     </div>
 
     <div class="wish-box">
-
         <h3>✨ Make a Birthday Wish</h3>
-
         <div id="form-area">
-            <textarea id="dad-wish"
-                placeholder="Type your secret wish here, Dad..."></textarea>
-
+            <textarea id="dad-wish" placeholder="Type your secret wish here, Dad..."></textarea>
             <button onclick="sendWish()">
                 Cast Your Wish into the Universe
             </button>
         </div>
-
         <p id="success-message" class="success">
             ✨ Your wish has been sent into the universe! May this coming year bring it straight to you, Dad. ✨
         </p>
-
     </div>
 
     <footer>
@@ -243,7 +234,6 @@
 </div>
 
 <script>
-
 const quotes=[
 "A father is someone you look up to no matter how tall you grow.",
 "The strength of a father guides his family through every storm with grace and wisdom.",
@@ -258,18 +248,14 @@ window.onload=function(){
 };
 
 function sendWish(){
-
     const input=document.getElementById("dad-wish").value;
-
     if(input.trim()===""){
         alert("Please type a wish first, Dad!");
         return;
     }
-
     document.getElementById("form-area").style.display="none";
     document.getElementById("success-message").style.display="block";
 }
-
 </script>
 
 </body>
